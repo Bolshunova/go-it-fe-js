@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+/* ============================== */
+.header__menu-box {
+    padding: 30px 0 15px;
+    max-width: 975px;
+    margin: 0 auto;
+}
+.navigation {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 26px;
+    line-height: 28px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav_logo-link {
+    color: #1298dd;
+}
+.text-color {
+    color: #8d8d8d;
+}
+.nav_box-link {
+    display: flex;
+    flex-basis: 368px;
+}
+.nav__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 368px;
+}
+.nav__link {
+    font-size: 12px;
+    color: #818181;
+}
+.back-image {
+    display: block;
+    background-image: url(img/sea-min.jpg);
+    min-width: 1280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 530px;
+    position: relative;
+}
+.info-site {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 96px;
+    color: #ebe8e8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.info-site:hover {
+    opacity: 1;
+    overflow:hidden;
+    font-size: 106px;
+    transition: 2s ease-out;
+}
+.footer {
+    position: relative;
+    min-width: 850px;
+    margin: auto;
+    border: #d4d1d1 1px solid;
+    background-color: #414141;
+    height: 30px;
+}
+.footer__info-site {
+    color: #ababab;
+    position:absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
