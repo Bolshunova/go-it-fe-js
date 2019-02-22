@@ -1,0 +1,91 @@
+@import "fonts.css";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+body {
+    font-family: 'Segoe UI Regular';
+}
+/* ============================== */
+.header {
+    background-color: #508d9c; 
+}
+.header__menu-box {
+    padding: 15px 0 15px;
+    max-width: 975px;
+    margin: 0 auto;
+}
+.navigation {
+    font-size: 22px;
+    line-height: 28px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav_logo-link {
+    color: #ffffff;
+    position: relative;
+    padding-left: 50px;
+}
+.nav_logo-link:before {
+    content: url(../img/instagram.png);
+    position: absolute;
+    left: 10px;
+} 
+.nav_box-link {
+    display: flex;
+    flex-basis: 368px;
+}
+.nav__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 368px;
+}
+.nav__link {
+    font-size: 16px;
+    color: #ffffff;
+}
+.back-image {
+    display: block;
+    background-image: url(../img/flowers-min.jpg);
+    min-width: 1280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 659px;
+    position: relative;
+}
+.info-site {
+    font-size: 45px;
+    text-align: center;
+    color: #ebe8e8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.info-site:hover {
+    color: #7abaee;
+}
+.footer {
+    position: relative;
+    min-width: 850px;
+    margin: auto;
+    border: #d4d1d1 1px solid;
+    background-color: #414141;
+    height: 30px;
+}
+.footer__info-site {
+    color: #ababab;
+    position:absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
