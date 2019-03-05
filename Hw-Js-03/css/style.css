@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+body {
+    font-family: 'Segoe UI Regular';
+}
+/* ============================== */
+
+.back-image {
+    display: block;
+    background-image: url(../img/back-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 800px;
+    padding-top: 128px;
+}
+.button-box {
+    width: 420px;
+    min-height: 300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+}
+.social-box:not(:nth-child(3n)) {
+    padding-right: 60px; 
+}
+
+
+
