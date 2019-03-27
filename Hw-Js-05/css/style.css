@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+body {
+    font-family: 'Segoe UI Regular';
+    margin: 0;
+}
+/* ============================== */
+
+.header {
+    background-image: linear-gradient(to top,#e0e0e0, #ffffff); 
+    min-width: 1280px;  
+}
+.header__menu-box {
+    max-width: 1024px;
+    min-height: 120px;
+    margin: 0 auto; 
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav_logo-link {
+    font-family: 'Lobster', cursive;
+    font-size: 49px;
+    font-weight: 400;
+    color: #ff7700;
+    margin: 0;
+}
+.colortext{
+    color: #676666;
+}
+.nav_box-link {
+    display: flex;
+    flex-basis: 435px;
+}
+.nav__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 445px;
+    padding: 0;
+}
+.nav__nav-item {
+    position: relative;
+    width: 109px;
+    height: 118px;
+    border: 1px solid #cccccc;
+}
+.nav__nav-item:hover {
+    background-image: linear-gradient(to top,#c9c0c0, #ffffff); 
+}
+.nav__nav-item::after {
+    display: block;
+    position: absolute;
+    opacity: 0;
+    content: '';
+    width: 100%;
+    height: 10px;
+    background-color: #ff7d00;
+    margin-top: 108px;
+}
+.nav__nav-item:hover::after {
+    opacity: 1;
+    color: #ff7d00;
+}
+.nav__link {
+    font-size: 16px;
+    line-height: 23px;
+    color: #626262;
+    text-shadow: 1px 1px 2px #ffffff;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translateX(-50%) translateY(-50%);  
+}
+.icon-home:before {
+    content: url(../img/home.png);
+    position: absolute;
+    bottom: 120%;
+    left: 30%;
+}
+.icon-gallery:before {
+    content: url(../img/gallery.png);
+    position: absolute;
+    bottom: 120%;
+    left: 30%;
+}
+.icon-members:before {
+    content: url(../img/members.png);
+    position: absolute;
+    bottom: 120%;
+    left: 30%;
+}
+.icon-log:before {
+    content: url(../img/logout.png);
+    position: absolute;
+    bottom: 120%;
+    left: 30%;
+}
+/* ==========main================== */
+.main-box {
+    max-width: 1024px;
+    min-height: 216px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info-image {
+    font-family: 'Helvetica CE Bold', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #565555;
+    margin-bottom: 30px;
+}
+form {
+    width: 675px;
+    display: flex;
+    justify-content: space-between;
+}
+.text-input {
+    width: 449px;
+    height: 48px;
+    border-radius: 3px;
+    border: 1px solid #cacaca;
+    box-shadow: inset 0 3px 2px #e2dada;
+    font-family: 'Helvetica CE Bold', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #5c5a5a;
+}
+.button-upload {
+    border: 1px solid #ffa400;
+    margin: 0;
+    width: 209px;
+    height: 48px;
+    border-radius: 3px;
+    background-image: linear-gradient(to top,#ff6600, #ffa400);
+    font-family: 'Helvetica CE Bold', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer; 
+}

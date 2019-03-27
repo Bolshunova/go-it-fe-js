@@ -1,0 +1,10 @@
+/* montserrat-regular - cyrillic-ext */
+@font-face {
+  font-family: 'Helvetica CE Bold';
+  font-style: bold;
+  font-weight: 700;
+  src: local('Helvetica CE Bold'), local('Helvetica CE Bold'),
+        url('../fonts/Helvetica CE Bold.ttf') format('ttf'), 
+}
+
+  
