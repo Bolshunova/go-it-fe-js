@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'helvetica_ceregular';
+  src: url('../fonts/helvetica-ce-regular_22458-webfont.woff2') format('woff2'),
+       url('../fonts/helvetica-ce-regular_22458-webfont.woff') format('woff');
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'helvetica_cebold';
+  src: local('helvetica_cebold'),
+       url('../fonts/helvetica-ce-bold_22457-webfont.woff2') format('woff2'),
+       url('../fonts/helvetica-ce-bold_22457-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bebas_neueregular';
+  src: url('../fonts/bebasneue_regular_0-webfont.woff2') format('woff2'),
+      url('../fonts/bebasneue_regular_0-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+}

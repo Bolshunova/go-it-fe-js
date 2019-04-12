@@ -6,13 +6,14 @@
 ul {
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 a {
     text-decoration: none;
     cursor: pointer;
 }
 body {
-    font-family: 'Segoe UI Regular';
+    /* font-family: 'Segoe UI Regular'; */
     margin: 0;
 }
 /* ============================== */
@@ -77,6 +78,8 @@ body {
     color: #ff7d00;
 }
 .nav__link {
+    font-family: 'helvetica_ceregular';
+     /* font-family: 'Montserrat'; */
     font-size: 16px;
     line-height: 23px;
     color: #626262;
@@ -120,7 +123,7 @@ body {
     justify-content: center;
 }
 .info-image {
-    font-family: 'helvetica_cebold', sans-serif;
+    font-family: 'helvetica_cebold';
     font-size: 28px;
     font-weight: 700;
     color: #565555;
@@ -137,7 +140,7 @@ form {
     border-radius: 3px;
     border: 1px solid #cacaca;
     box-shadow: inset 0 3px 2px #e2dada;
-    font-family: 'helvetica_cebold', sans-serif;
+    font-family: 'helvetica_ceregular';
     font-weight: 400;
     font-size: 24px;
     color: #5c5a5a;
@@ -149,9 +152,53 @@ form {
     height: 48px;
     border-radius: 3px;
     background-image: linear-gradient(to top,#ff6600, #ffa400);
-    font-family: 'helvetica_cebold', sans-serif;
+    font-family: 'helvetica_cebold';
     font-weight: 700;
     font-size: 24px;
     color: #ffffff;
     cursor: pointer; 
+}
+.main-item {
+    width: 988px;
+    min-height: 905px;
+    margin: 0 auto;
+}
+.list-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 220px;   
+}
+.about-item {
+    position: relative;
+    padding: 10px 8px 0;
+    box-shadow: 0 0 2px 2px #d6d6d6;
+}
+.about-item:not(:nth-child(4n)) {
+    margin-right: 37px;
+}
+.about-item:nth-child(-n+8) {
+    margin-bottom: 30px;
+}
+.item-info {
+    height: 37px;
+    font-family: 'helvetica_ceregular', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #979393;
+}
+.item-info::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #e0dfdf;
+    margin-top: 10px;
+}
+.date-image {
+    position: absolute;
+    top: 70%;
+    left: 7%;
+    color: #ffffff;
+    font-family: 'bebas_neueregular';
+    font-size: 19px;
 }

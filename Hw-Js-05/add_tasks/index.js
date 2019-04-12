@@ -1,7 +1,5 @@
 'use strict';
 
-'use strict';
-
 // task 1
 
 /*  Перепишите все циклы for используя методы map, filter, find, reduce и т. д. */
