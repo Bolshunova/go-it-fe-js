@@ -1,0 +1,33 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* --------------------------- */
+ul {
+  display: flex;
+  min-height: 100px;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: flex-end;
+  border: 1px solid #d4d4d4;
+  position: absolute;
+  bottom: 10px;
+  width: 98%;
+}
+img {
+  display: block;
+  width: 98%;
+  height: auto;
+}
+.image-gallery {
+  margin: 0 auto;
+}
