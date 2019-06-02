@@ -65,44 +65,65 @@ const galleryItems = [
   { preview: 'img/06-320px.jpg', fullview: 'img/06-1280px.jpg', alt: "alt text 6" },
 ];
 
-
 const imageGallery = document.querySelector('.js-image-gallery');
 
 
 const div = document.createElement('div');
 div.classList.add('fullview');
 
+const fullImg = galleryItems.find(item => item.alt === 'alt text 1');
+div.appendChild(createImg(fullImg.fullview, null, fullImg.alt, 'fullphoto'));
+
   const ul = document.createElement('ul');
   ul.classList.add('preview');
 
   galleryItems.forEach(item => {
     const li = document.createElement('li');
-    li.append(createImg(item.preview, item.fullview, item.alt));
+    li.appendChild(createImg(item.preview, item.fullview, item.alt, 'photo'));
     ul.appendChild(li);
   });
 
 
-function createImg(src, datafullview, alt) {
-  const img = document.createElement('img');
-  img.setAttribute("src", src);
-  img.setAttribute("data-fullview", datafullview);
-  img.setAttribute("alt", alt);
-  return img;
-}
+  imageGallery.append(div, ul);
 
-ul.addEventListener('click', fullPicture);
+const createFullPicture = ({target}) => {
+  const fullphoto = document.querySelector('.fullphoto');
+  fullphoto.setAttribute('src', target.dataset.fullview);
+  console.log(target.dataset.fullview)
+  fullphoto.setAttribute('alt', target.alt); 
+  // console.log(target.alt)
+};
 
-function fullPicture () {
+const picture = Array.from(document.querySelectorAll('.photo'))
+picture.forEach(item => item.addEventListener('click', createFullPicture));
+console.log(picture);
+
+const activeImg = ({target}) => {
   event.preventDefault();
-  console.log(event.target);
+  picture.forEach(elem => {
+    if(elem !== target) {
+      elem.classList.remove('photo-active');
+    } else {
+      elem.classList.add('photo-active');
+    }
+  });
+};
 
+ul.addEventListener('click', activeImg);
 
-
-
-
-  
+function createImg(src, datafullview, alt, className) {
+  const fullImg = document.createElement('img');
+  if(datafullview !== null) {
+    fullImg.classList.add(className);
+    fullImg.setAttribute("src", src);
+    fullImg.setAttribute("data-fullview", datafullview);
+    fullImg.setAttribute("alt", alt);
+  } else {
+    fullImg.classList.add(className);
+    fullImg.setAttribute("src", src);
+    fullImg.setAttribute("alt", alt);
+  }
+  return fullImg;
 }
-
-imageGallery.append(div, ul);
 
 console.log(imageGallery);
