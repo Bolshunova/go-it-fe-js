@@ -1,0 +1,74 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: 'Segoe UI', sans-serif;
+	font-size: 17px;
+}
+/* ------------------------------------- */
+
+.js-form {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+.chackboxes {
+	display: flex;
+	justify-content: space-between;
+	width: 900px;
+	margin: 0px 150px;
+}
+h2 {
+	border-bottom: 1px solid;
+	margin-bottom: 15px;
+}
+.btn {
+	display: flex;
+	justify-content: space-between;
+	width: 420px;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+button {
+	width: 200px;
+	height: 40px;
+	text-transform: uppercase;
+	border: 0;
+	background-color: #2ddb2d;
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 15px;
+	border-radius: 2px;
+}
+ul {
+	list-style: none;
+}
+section {
+	width: 150px;
+}
+.result {
+	display: flex;
+	flex-wrap: wrap;
+	width: 1200px;
+	margin: 0 auto;
+}
+.laptop_card {
+	width: 380px;
+	box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+	margin-bottom: 30px;
+	padding: 30px;
+}
+.laptop_card:not(:nth-child(3n-3)) {
+	margin-right: 30px;
+}
+img {
+	width: 100%;
+}
+span {
+	font-weight: 500;
+}
+p {
+	font-weight: 300;
+}
